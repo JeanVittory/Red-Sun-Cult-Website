@@ -3,6 +3,10 @@ html{
     scroll-behavior: smooth;
 }
 
+h1{
+    font-size: 10px;
+}
+
 .container-ph-background{
     width: 100vw;
     height: 100hw;
@@ -165,11 +169,10 @@ html{
 
 .streaming-culto-al-sol-rojo div{
     width: 100%;
-    margin: 0 auto;
 }
 
 
-.streaming-culto-al-sol-rojo a{
+.streaming-culto-al-sol-rojo div a{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 900;
     font-size: 1.4rem;
@@ -193,9 +196,6 @@ html{
     margin-bottom: 3rem;
 }
 
-.section-videos figure:first-of-type{
-    padding-top: 5rem;
-}
 
 .figure-section-videos{
     max-width: 100%;
@@ -308,7 +308,18 @@ html{
 .icons-music button {
     background-color: #000000;
     opacity: .8;
-    
+}
+
+.icons-music-first button:hover{
+    background-color: #fd5c63;
+    opacity: .9;
+    transition: background-color .2s ease-in-out;
+}
+
+.icons-music-last button:hover{
+    background-color: #3c65b4;
+    opacity: .9;
+    transition: background-color .2s ease-in-out;
 }
 
 .icons-music button a{
@@ -318,6 +329,21 @@ html{
     color: #fff;
     text-decoration: none;
     padding: .5rem 1rem;
+}
+
+.section-videos div h2{
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    color: #fff;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 auto;
+}
+
+.section-videos > div {
+    position: relative;
+    padding-top: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .footer-section{
@@ -413,8 +439,7 @@ html{
         height: auto;
         position: absolute;
         top: 15rem;
-        left: 18%;        
-        
+        left: 18%;          
     }
 
     .video-background-desktop{
@@ -422,10 +447,14 @@ html{
         height: 100vh;
         object-fit: cover;
     }
+
     
     .nav{
-        display: block;
+        /* display: block;*/
         min-width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
         position: absolute; 
         top: 0; 
         margin: 0 auto; 
@@ -445,7 +474,7 @@ html{
         font-family: 'Catamaran', sans-serif;
         color: #fff;
         font-weight: 900;
-        padding: 1rem;
+        padding: 1.5%;
         letter-spacing: .8rem;
         margin: 0 0;
         overflow: hidden;

@@ -93,10 +93,8 @@ function stuck(desktopNnav){
   })
 }
 
-
-
 document.addEventListener("DOMContentLoaded", (e)=>{
-  stuck("#desktop-nav")
+  stuck("#desktop-nav");
 })
 
 
